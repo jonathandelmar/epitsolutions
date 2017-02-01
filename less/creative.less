@@ -177,7 +177,7 @@ aside {
         .opacity(60);
         color: #0070b8;
         display: block;
-        width: 195px;
+        width: 205px;
         padding-left: 13px;
         padding-right: 13px;
         padding-top:7%;
@@ -204,7 +204,7 @@ header {
     position: relative;
     width: 100%;
     min-height: auto;
-    .background-cover;
+    background-size: 100%;
     background-position: center 50px;
     background-image: url('../img/header.jpg');
     text-align: center;
@@ -270,7 +270,7 @@ header {
     background-position: center 0;
     background-repeat: no-repeat;
     background-color: #fff;
-    height: 800px;
+    height: 100%;
     .container {
         background-color: #5f5f5f;
         color: #fff;
@@ -296,11 +296,17 @@ header {
     min-height: auto;
     background-image: url('../img/values-bg.jpg');
     background-position: center;
+    height: 100%;
     .container {
         padding: 0;
         width: 100%;
+        height: inherit;
+        .row {
+            height: inherit;
+        }
         .row .text-center {
             height: 800px;
+            height: inherit;
             position: relative;
             h2.section-heading {
                 color: #0070b8;
@@ -309,8 +315,7 @@ header {
                 margin: 2.2%;
             }
             .content {
-                background-color: #5f5f5f;
-                color: #fff;
+                color: #5f5f5f;
                 padding: 1.8% 5%;
                 width: 100%;
                 .opacity(70);
@@ -330,6 +335,10 @@ header {
     }
 }
 
+.page-fr #values {
+    background-image: url('../img/values-fr-bg.jpg');
+}
+
 #offers {
     position: relative;
     width: 100%;
@@ -340,11 +349,16 @@ header {
     background-position: left;
     background-repeat: no-repeat;
     background-color: #4d4d4d;
+    height: inherit;
     .container {
         padding: 0;
         width: 100%;
+        height: inherit;
+        .row {
+            height: inherit;
+        }
         .row .text-center {
-            height: 800px;
+            height: inherit;
             position: relative;
             h2.section-heading {
                 color: #fff;
@@ -354,14 +368,19 @@ header {
                 margin: 2.2%;
                 .rotate(283deg);
                 position: absolute;
+                width: 400px;
                 top: 390px;
                 left: 430px;
+                text-transform: uppercase;
+            }
+            h2.section-heading1 {
+                left: 367px;
             }
             h2.section-heading2 {
-                left: 540px;
+                left:458px;
             }
             h2.section-heading3 {
-                left: 620px;
+                left: 547px;
             }
             .content {
                 padding: 20px;
@@ -398,11 +417,18 @@ header {
     min-height: auto;
     background-image: url('../img/ouroffers-bg.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    height: inherit;
     .container {
         padding: 0;
         width: 100%;
+        height: inherit;
+        .row {
+            height: inherit;
+        }
         .row .text-center {
-            height: 800px;
+            height: inherit;
             position: relative;
             h2.section-heading {
                 color: #0070b8;
@@ -434,10 +460,11 @@ header {
     .background-cover;
     background-image: url('../img/contact-bg.jpg');
     background-position-x: center;
+    height: inherit;
     .container {
         padding: 0;
         width: 100%;
-        height: 800px;
+        height: inherit;
         h2.section-heading {
             color: #1d1d1d;
             font-size: 2.8em;

@@ -173,7 +173,7 @@ aside {
   /* CSS3 */
   color: #0070b8;
   display: block;
-  width: 195px;
+  width: 205px;
   padding-left: 13px;
   padding-right: 13px;
   padding-top: 7%;
@@ -201,10 +201,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-size: 100%;
   background-position: center 50px;
   background-image: url('../img/header.jpg');
   text-align: center;
@@ -271,7 +268,7 @@ header .header-content .header-content-inner p {
   background-position: center 0;
   background-repeat: no-repeat;
   background-color: #fff;
-  height: 800px;
+  height: 100%;
 }
 #about .container {
   background-color: #5f5f5f;
@@ -301,13 +298,19 @@ header .header-content .header-content-inner p {
   min-height: auto;
   background-image: url('../img/values-bg.jpg');
   background-position: center;
+  height: 100%;
 }
 #values .container {
   padding: 0;
   width: 100%;
+  height: inherit;
+}
+#values .container .row {
+  height: inherit;
 }
 #values .container .row .text-center {
   height: 800px;
+  height: inherit;
   position: relative;
 }
 #values .container .row .text-center h2.section-heading {
@@ -317,8 +320,7 @@ header .header-content .header-content-inner p {
   margin: 2.2%;
 }
 #values .container .row .text-center .content {
-  background-color: #5f5f5f;
-  color: #fff;
+  color: #5f5f5f;
   padding: 1.8% 5%;
   width: 100%;
   filter: alpha(opacity=70);
@@ -338,6 +340,9 @@ header .header-content .header-content-inner p {
 #values .container .row .text-center .content .bullet {
   font-size: .9em;
 }
+.page-fr #values {
+  background-image: url('../img/values-fr-bg.jpg');
+}
 #offers {
   position: relative;
   width: 100%;
@@ -351,13 +356,18 @@ header .header-content .header-content-inner p {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #4d4d4d;
+  height: inherit;
 }
 #offers .container {
   padding: 0;
   width: 100%;
+  height: inherit;
+}
+#offers .container .row {
+  height: inherit;
 }
 #offers .container .row .text-center {
-  height: 800px;
+  height: inherit;
   position: relative;
 }
 #offers .container .row .text-center h2.section-heading {
@@ -378,14 +388,19 @@ header .header-content .header-content-inner p {
     /* Internet Explorer */
   /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=(@degree / 90)); */
   position: absolute;
+  width: 400px;
   top: 390px;
   left: 430px;
+  text-transform: uppercase;
+}
+#offers .container .row .text-center h2.section-heading1 {
+  left: 367px;
 }
 #offers .container .row .text-center h2.section-heading2 {
-  left: 540px;
+  left: 458px;
 }
 #offers .container .row .text-center h2.section-heading3 {
-  left: 620px;
+  left: 547px;
 }
 #offers .container .row .text-center .content {
   padding: 20px;
@@ -416,13 +431,20 @@ header .header-content .header-content-inner p {
   min-height: auto;
   background-image: url('../img/ouroffers-bg.jpg');
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  height: inherit;
 }
 #our-offers .container {
   padding: 0;
   width: 100%;
+  height: inherit;
+}
+#our-offers .container .row {
+  height: inherit;
 }
 #our-offers .container .row .text-center {
-  height: 800px;
+  height: inherit;
   position: relative;
 }
 #our-offers .container .row .text-center h2.section-heading {
@@ -453,11 +475,12 @@ header .header-content .header-content-inner p {
   -o-background-size: cover;
   background-image: url('../img/contact-bg.jpg');
   background-position-x: center;
+  height: inherit;
 }
 #contact .container {
   padding: 0;
   width: 100%;
-  height: 800px;
+  height: inherit;
 }
 #contact .container h2.section-heading {
   color: #1d1d1d;

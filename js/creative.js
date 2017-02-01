@@ -1,11 +1,15 @@
 (function($) {
     "use strict"; // Start of use strict
+    
+    var offsetHeight = $('#mainNav').height();
+    
+    $('body > section').height($('body').height() - offsetHeight);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll, #page-navigation a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top - offsetHeight)
         }, 1500, 'easeOutExpo');
         event.preventDefault();
     });
