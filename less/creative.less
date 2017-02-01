@@ -297,6 +297,8 @@ header {
     background-image: url('../img/values-bg.jpg');
     background-position: center;
     height: 100%;
+    background-repeat: no-repeat;
+    background-color: #fff;
     .container {
         padding: 0;
         width: 100%;
@@ -345,15 +347,14 @@ header {
     min-height: auto;
     .background-cover;
     background-image: url('../img/offers-bg.jpg');
-    background-size: 1280px 800px;
-    background-position: left;
+    background-position: center top;
     background-repeat: no-repeat;
     background-color: #4d4d4d;
     height: inherit;
     .container {
         padding: 0;
-        width: 100%;
         height: inherit;
+        width: 100%;
         .row {
             height: inherit;
         }
@@ -369,7 +370,7 @@ header {
                 .rotate(283deg);
                 position: absolute;
                 width: 400px;
-                top: 390px;
+                top: 30%;
                 left: 430px;
                 text-transform: uppercase;
             }
@@ -384,9 +385,9 @@ header {
             }
             .content {
                 padding: 20px;
-                width: 30%;
-                left: 820px;
-                top: 330px;
+                top: 31%;
+                width: 25%;
+                right: 20px;
                 color: #fff;
                 bottom: 0;
                 position: absolute;
@@ -409,6 +410,10 @@ header {
         }
         
     }
+}
+
+.page-fr #values {
+    background-image: url('../img/offers-fr-bg.jpg');
 }
 
 #our-offers {

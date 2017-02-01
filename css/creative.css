@@ -299,6 +299,8 @@ header .header-content .header-content-inner p {
   background-image: url('../img/values-bg.jpg');
   background-position: center;
   height: 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 #values .container {
   padding: 0;
@@ -352,16 +354,15 @@ header .header-content .header-content-inner p {
   background-size: cover;
   -o-background-size: cover;
   background-image: url('../img/offers-bg.jpg');
-  background-size: 1280px 800px;
-  background-position: left;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: #4d4d4d;
   height: inherit;
 }
 #offers .container {
   padding: 0;
-  width: 100%;
   height: inherit;
+  width: 100%;
 }
 #offers .container .row {
   height: inherit;
@@ -389,7 +390,7 @@ header .header-content .header-content-inner p {
   /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=(@degree / 90)); */
   position: absolute;
   width: 400px;
-  top: 390px;
+  top: 30%;
   left: 430px;
   text-transform: uppercase;
 }
@@ -404,9 +405,9 @@ header .header-content .header-content-inner p {
 }
 #offers .container .row .text-center .content {
   padding: 20px;
-  width: 30%;
-  left: 820px;
-  top: 330px;
+  top: 31%;
+  width: 25%;
+  right: 20px;
   color: #fff;
   bottom: 0;
   position: absolute;
@@ -424,6 +425,9 @@ header .header-content .header-content-inner p {
   line-height: 1.3;
   font-size: .9em;
   text-align: left;
+}
+.page-fr #values {
+  background-image: url('../img/offers-fr-bg.jpg');
 }
 #our-offers {
   position: relative;
