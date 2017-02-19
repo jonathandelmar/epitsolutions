@@ -173,19 +173,16 @@ aside {
     height: 85%;
     z-index: 9999;
     a {
-        background: #fff;
+        background: #0d7e40;
         .opacity(60);
-        color: #0070b8;
+        color: #FFF;
         display: block;
-        width: 205px;
-        padding-left: 13px;
-        padding-right: 13px;
-        padding-top:7%;
-        padding-bottom:7%;
+        width: 290px;
+        padding: 13px 30px;
         margin: 10% 0;
         font: bold 17px arial, sans-serif;
         cursor: none;
-        height: 15%;
+        height: 105px;
         max-height: 43px;
     }
     a:hover {
@@ -207,6 +204,8 @@ header {
     background-size: 100%;
     background-position: center 50px;
     background-image: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-color: #2e3548;
     text-align: center;
     color: white;
     .header-content {
@@ -232,6 +231,9 @@ header {
                 margin-bottom: 50px;
             }
         }
+    }
+    @media (min-width: 1920px) {
+        background-size:  100%;
     }
     @media (min-width: 768px) {
         min-height: 100%;
@@ -271,6 +273,21 @@ header {
     background-repeat: no-repeat;
     background-color: #fff;
     height: 100%;
+    .container-bg {
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/about-bg1.png');
+        .background-cover;
+        background-position-y: -130px
+    }
+    h2.section-heading {
+        color: #0070b8;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0;
+        letter-spacing: .2em;
+    }
     .container {
         background-color: #5f5f5f;
         color: #fff;
@@ -390,11 +407,10 @@ header {
             }
             .content {
                 padding: 20px;
-                top: 31%;
                 width: 25%;
-                right: 20px;
+                right: 100px;
                 color: #fff;
-                bottom: 0;
+                bottom: 10%;
                 position: absolute;
                 .serif-font;
                 h2 {
@@ -502,7 +518,7 @@ header {
             padding: 6% 10% 6% 15%;
             .fa {
                 font-size: 10em;
-                margin-bottom: 25%;
+                margin-bottom: 5%;
             }
             a {
                 color: #1d1d1d;
@@ -515,7 +531,7 @@ header {
             bottom: 0;
             #terms-link {
                 display: inline-block;
-                padding: 15px 40px;
+                padding: 15px 40px 40px;
                 color: #fff;
                 text-decoration: underline;
                 background-color: #1d1d1d;
