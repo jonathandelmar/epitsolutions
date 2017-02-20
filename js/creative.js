@@ -13,6 +13,11 @@
         }, 1500, 'easeOutExpo');
         event.preventDefault();
     });
+    
+    // custom js styling
+    var offsetHeightForBg = (135*parseInt($('#about .container-bg').css('background-size')))/100 - $('#about .section-heading').outerHeight();
+    $('#about .container-bg').css('background-position-y', '-'+offsetHeightForBg+'px');
+    console.log(offsetHeightForBg);
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
