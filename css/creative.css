@@ -329,14 +329,11 @@ h2.section-heading {
   width: 100%;
   min-height: auto;
   background-image: url('../img/values-bg.jpg');
-  background-position: center;
+  background-size: 90%;
+  background-position: center 0;
   height: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 #values .container {
   padding: 0;
