@@ -1,9 +1,16 @@
 (function($) {
     "use strict"; // Start of use strict
     
+    $(window).resize(function() {
+        var pageRatio = 1.6; // 8/5 or 1280 / 800
+        var width = pageRatio * $(window).height();
+        $('#page-container, #mainNav').width(width);
+    }).resize();
+    
     var offsetHeight = $('#mainNav').height();
     
-    $('body > section').height($('body').height() - offsetHeight);
+    $('#page-container > section, #page-container > header').height($('body').height() - offsetHeight);
+    $('#page-container > header').css('margin-top', offsetHeight + 'px');
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll, #page-navigation a').bind('click', function(event) {
@@ -17,7 +24,6 @@
     // custom js styling
     var offsetHeightForBg = (135*parseInt($('#about .container-bg').css('background-size')))/100 - $('#about .section-heading').outerHeight();
     $('#about .container-bg').css('background-position-y', '-'+offsetHeightForBg+'px');
-    console.log(offsetHeightForBg);
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({

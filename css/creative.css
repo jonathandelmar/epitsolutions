@@ -8,7 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #757575;
 }
 body {
   font-family: Arial, sans-serif;
@@ -194,12 +194,18 @@ aside {
   width: 100%;
   bottom: 11%;
 }
+#page-container,
+#mainNav {
+  margin: 0 auto;
+}
 header {
   position: relative;
   width: 100%;
   min-height: auto;
-  background-size: 100%;
-  background-position: center 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   background-image: url('../img/header.jpg');
   background-repeat: no-repeat;
   background-color: #2e3548;
@@ -273,17 +279,17 @@ h2.section-heading {
   background-size: cover;
   -o-background-size: cover;
   background-image: url('../img/about-bg.jpg');
-  background-position: center 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #fff;
   height: 100%;
 }
 #about .container-bg {
   width: 100%;
+  background-position: center;
   height: 100%;
   background-image: url('../img/about-bg1.png');
-  background-position-x: 100%;
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 #about h2.section-heading {
@@ -469,6 +475,10 @@ h2.section-heading {
   background-image: url('../img/ouroffers-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   background-color: #fff;
   height: inherit;
 }
